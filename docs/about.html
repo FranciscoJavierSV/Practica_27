@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">Mi Practica</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About Us</a>
+    </div>
+    <div class="nav-right">
+      <span id="userName" class="user-name"></span>
+      <button id="loginBtn" class="icon-btn" title="Login">
+        <span class="login-icon">🔒</span>
+      </button>
+    </div>
+  </nav>
+  <main class="container">
+    <section id="about">
+      <h1>Sobre este proyecto</h1>
+      <p>En MangasX creemos que cada historia merece ser vivida página a página. Somos un equipo apasionado por el manga, dedicado a crear un espacio accesible, visualmente envolvente y siempre actualizado para lectores de todos los niveles. Desde clásicos legendarios hasta joyas emergentes, nuestra misión es conectar a la comunidad hispanohablante con las mejores narrativas ilustradas del mundo, fomentando la lectura, el coleccionismo y la conversación. 
+        Aquí, el manga no solo se lee: se comparte, se vive y se transforma en experiencia.</p>
+    </section>
+  </main>
+
+  <!-- Modal de Login -->
+  <div id="loginModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeModal" class="close" aria-label="Cerrar">&times;</button>
+      <h3>Iniciar sesión</h3>
+      <form id="formLogin">
+        <input id="login" type="text" placeholder="Cuenta" required />
+        <input id="password" type="password" placeholder="Contraseña" required />
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+  
+  <footer class="site-footer">
+    <div class="footer-box">Francisco Javier Sanchez Vallin ++ 21/10/2025</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

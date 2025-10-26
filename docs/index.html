@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Practica 26</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">Mi Practica</a>
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+    </div>
+    <div class="nav-right">
+      <span id="userName" class="user-name"></span>
+      <button id="loginBtn" class="icon-btn" title="Login">🔒</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="home">
+      <h1>Bienvenido</h1>
+      <p>Bienvenido a MangasX, tu universo digital de aventuras ilustradas, donde cada página te transporta a mundos épicos llenos de acción, romance y misterio. Descubre los títulos más leídos, explora nuevos lanzamientos cada semana y guarda tus favoritos en tu biblioteca personal. ¡Empieza a leer y forma parte de la comunidad que vive el manga como nunca antes!</p> <!-- texto modificado -->
+    </section>
+  </main>
+
+  <div id="loginModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeModal" class="close" aria-label="Cerrar">&times;</button>
+      <h3>Iniciar sesion</h3>
+      <form id="formLogin">
+        <input id="login" type="text" placeholder="Cuenta" required />
+        <input id="password" type="password" placeholder="Contraseña" required />
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-box">Francisco Javier Sanchez Vallin ++ 21/10/2025</div> 
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
